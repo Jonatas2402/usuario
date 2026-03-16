@@ -1,10 +1,7 @@
 package com.projeto.usuario.infraestructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.jspecify.annotations.Nullable;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,6 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "usuario")
+@Builder
 /*Caso o nome não seja inserido ele utiliza-ra como default o nome da classe.*/
 /*Lombok é uma biblioteca muito util para diminuir o tempo de código, otimizando o tempo.*/
 public class Usuario implements UserDetails {
