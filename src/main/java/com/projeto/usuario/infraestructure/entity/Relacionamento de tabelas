@@ -1,0 +1,6 @@
+O relacionamento das tabelas
+
+Usuario -> endereço -> telefone.
+
+Usuário detem as tabelas endereço e telefone, se um usuário for excluido será excluido também
+o endereço e o telefone, ligado a esse usuário.
